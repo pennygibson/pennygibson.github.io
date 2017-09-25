@@ -7,12 +7,12 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 .wrapper{
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 header {
   position: relative;
-  height: 250px;
+  height: 200px;
   background-image: linear-gradient(#ff512f, #dd2476);
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
@@ -49,14 +49,16 @@ h2 {
 .container {
   position: relative;
   width: 50%;
-  margin: 20px;
+  margin: 20px 40px;
   padding-bottom: 60px;
+  flex: 1 40%;
 }
 
 .image {
   display: block;
   width: 100%;
   height: auto;
+  padding-top: 20px;
 }
 
 .overlay {
@@ -64,7 +66,6 @@ h2 {
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #dd2476;
   background-image: linear-gradient(#dd2476, #ff512f);
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
@@ -81,9 +82,10 @@ h2 {
 }
 
 .text {
-  white-space: nowrap; 
+  white-space: wrap;
+  width: 94%;
   color: white;
-  font-size: 1em;
+  font-size: .9em;
   position: absolute;
   overflow: hidden;
   top: 40%;
@@ -99,9 +101,14 @@ h4{
 }
 .mainContainer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
+    padding-bottom: 0px;
+}
+.topContainer{
+    padding-top: 60px;
 }
 .last{
     justify-content: center;
@@ -109,6 +116,7 @@ h4{
 footer{
     height: 200px;
     border-top: 3px solid #ff512f;
+    margin-top:50px;
     }
 .footer{
     color: #dd2476;
@@ -121,7 +129,6 @@ footer{
 .border{
     height: 15px;
     background-image: radial-gradient(#dd2476, #ff512f);
-   
 }
 .foot{
     flex: 1;
@@ -155,8 +162,9 @@ p a{
 }
 .about{
     color: #dd2476;
+    font-size: 1.1em;
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 40px auto 0;
 }
 .profile{
@@ -164,7 +172,7 @@ p a{
 }
 .aboutContent{
     align-self: center;
-    flex: 3;
+    flex: 5;
     padding-right: 20px;
 }
 
@@ -180,6 +188,12 @@ p a{
         margin: 0 auto;
         width: 100%;
     }
+    .text{
+        width: 80%;
+    }
+    .container:hover .overlay {
+      height: 100%;
+}
    
     .container{
         margin: 0 auto;
@@ -194,11 +208,30 @@ p a{
     h2{
         font-size: 1.3em;
     }
+    h4{
+        padding: 0;
+        margin-bottom: 0;
+    }
     .footer{
         flex-direction: column;
+        margin-top: 20px;
     }
     .about{
+        flex-direction: column;
         width: 90%;
+        flex-wrap: wrap;
+        margin: 20px auto 10px auto;
+
+    }
+   .profilePic{
+        order: 2;
+        width: 40%;
+    }
+    .aboutContent{
+        padding-right: 0;
+    }
+    .topContainer{
+        padding-top: 0;
     }
 }
 @media (max-width: 1000px){
