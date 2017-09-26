@@ -59,9 +59,9 @@ h2 {
   width: 100%;
   height: auto;
   padding-top: 20px;
-  -webkit-box-shadow: 1px 1px 38px 2px rgba(199,199,199,1);
--moz-box-shadow: 1px 1px 38px 2px rgba(199,199,199,1);
-box-shadow: 1px 1px 38px 2px rgba(199,199,199,1);
+  -webkit-box-shadow: 1px 1px 10px 2px rgba(199,199,199,1);
+  -moz-box-shadow: 1px 1px 10px 2px rgba(199,199,199,1);
+  box-shadow: 1px 1px 10px 2px rgba(199,199,199,1);
 }
 .image:hover{
     box-shadow: none;
